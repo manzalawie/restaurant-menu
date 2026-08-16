@@ -153,9 +153,9 @@ window.MENU = {
           caloriesNoteAr: "للسندوتش",
           caloriesNoteEn: "per sandwich",
           sizes: [
-            { id: "2", nameAr: "2 حبة", nameEn: "2 pcs", price: 15, calories: 333 },
             { id: "11", nameAr: "11 حبة", nameEn: "11 pcs", price: 61, calories: 333 },
             { id: "16", nameAr: "16 حبة", nameEn: "16 pcs", price: 79, calories: 333 }
+            { id: "22", nameAr: "22 حبة", nameEn: "22 pcs", price: 105, calories: 333 },
           ]
         }
       ]

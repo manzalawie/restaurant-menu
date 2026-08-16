@@ -629,7 +629,16 @@ img {
   margin-top: auto;
 }
 
+.item-meta-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
 .cal-badge,
+.salt-badge,
 .price-badge {
   border-radius: 999px;
   font-weight: 700;
@@ -641,6 +650,23 @@ img {
   background: var(--cream);
   color: var(--maroon);
   border: 1px solid var(--maroon);
+}
+
+.salt-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: rgba(109, 48, 65, 0.08);
+  color: var(--maroon);
+  border: 1px solid rgba(109, 48, 65, 0.35);
+  white-space: nowrap;
+}
+
+.salt-icon {
+  width: 15px;
+  height: 15px;
+  flex-shrink: 0;
+  display: block;
 }
 
 .price-badge {
@@ -979,7 +1005,8 @@ img {
   }
 
   .price-badge,
-  .cal-badge {
+  .cal-badge,
+  .salt-badge {
     font-size: 0.75rem;
     padding: 4px 8px;
   }

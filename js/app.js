@@ -90,6 +90,50 @@
     return text;
   }
 
+  var SALT_ICON =
+    '<svg class="salt-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">' +
+    '<path d="M7.5 2.75h9A1.25 1.25 0 0 1 17.75 4v1.5A1.25 1.25 0 0 1 16.5 6.75h-9A1.25 1.25 0 0 1 6.25 5.5V4A1.25 1.25 0 0 1 7.5 2.75z" fill="currentColor"/>' +
+    '<circle cx="9.25" cy="4.25" r="0.65" fill="#fff"/>' +
+    '<circle cx="12" cy="4.25" r="0.65" fill="#fff"/>' +
+    '<circle cx="14.75" cy="4.25" r="0.65" fill="#fff"/>' +
+    '<path d="M9.75 7.25h4.5v1.75h-4.5V7.25z" fill="currentColor"/>' +
+    '<path d="M8.25 9.5h7.5l-1.85 11.75H10.1L8.25 9.5z" fill="currentColor"/>' +
+    '<path d="M10.75 11.25v8.25" stroke="#fff" stroke-width="1.1" stroke-linecap="round" opacity="0.45"/>' +
+    "</svg>";
+
+  function formatMlgm(value) {
+    if (value == null || value === "") return "";
+    return String(value);
+  }
+
+  function resolveMlgm(source) {
+    if (!source) return null;
+    if (source.mlgm != null && source.mlgm !== "") return source.mlgm;
+    return null;
+  }
+
+  function itemCardMlgm(item) {
+    if (item.sizes && item.sizes.length) {
+      var sizeVals = item.sizes
+        .map(function (s) { return resolveMlgm(s); })
+        .filter(function (v) { return v != null; });
+      if (sizeVals.length) return sizeVals[0];
+    }
+    if (item.choices && item.choices.length) {
+      var choiceVals = item.choices
+        .map(function (c) { return resolveMlgm(c); })
+        .filter(function (v) { return v != null; });
+      if (choiceVals.length) return choiceVals[0];
+    }
+    return resolveMlgm(item);
+  }
+
+  function saltBadgeHtml(value) {
+    var text = formatMlgm(value);
+    if (!text) return "";
+    return '<span class="salt-badge" title="MLGM">' + SALT_ICON + "<span>" + text + "</span></span>";
+  }
+
   function basePrice(item) {
     if (item.sizes && item.sizes.length) {
       var prices = item.sizes.map(function (s) { return s.price; });
@@ -366,6 +410,13 @@
         calText = formatCalories(item.calories, item.caloriesNoteAr);
       }
 
+      var saltHtml = saltBadgeHtml(itemCardMlgm(item));
+      var metaHtml =
+        '<div class="item-meta-badges">' +
+        (calText ? '<span class="cal-badge">' + calText + "</span>" : "") +
+        saltHtml +
+        "</div>";
+
       var html =
         '<div class="col-12 col-sm-6 col-lg-4 col-xl-3">' +
         '<article class="item-card" data-id="' + item.id + '">' +
@@ -376,7 +427,7 @@
         (item.choices && !item.choiceMode && !item.logoGrid ? renderTypePreview(item) : "") +
         (item.sizes ? renderSizePreview(item) : "") +
         '<div class="item-foot">' +
-        (calText ? '<span class="cal-badge">' + calText + "</span>" : "<span></span>") +
+        metaHtml +
         '<span class="price-badge">' + basePrice(item) + "</span>" +
         "</div></div></article></div>";
       $items.append(html);
@@ -439,6 +490,7 @@
       image: choice && choice.image ? choice.image : item.image,
       price: choice && choice.price != null ? choice.price : item.price,
       calories: choice && choice.calories != null ? choice.calories : item.calories,
+      mlgm: choice && choice.mlgm != null ? choice.mlgm : item.mlgm,
       caloriesNoteAr: item.caloriesNoteAr,
       sizes: item.sizes,
       choices: !item.choiceMode ? item.choices : null
@@ -473,6 +525,7 @@
       $("#item-modal-cal").text(
         view.calories != null ? formatCalories(view.calories, view.caloriesNoteAr) : "—"
       );
+      $("#item-modal-salt").html(saltBadgeHtml(view.mlgm) || "—");
       $("#item-modal-price").text(formatPrice(view.price) || "—");
     }
 
@@ -488,6 +541,7 @@
       activeContext.selectedType = view.choices[0].id;
       if (!view.sizes) {
         $("#item-modal-cal").text(formatCalories(view.choices[0].calories, view.caloriesNoteAr));
+        $("#item-modal-salt").html(saltBadgeHtml(view.choices[0].mlgm != null ? view.choices[0].mlgm : view.mlgm) || "—");
         $("#item-modal-price").text(formatPrice(view.choices[0].price));
       }
     } else {
@@ -503,6 +557,13 @@
       $("#item-modal-cal").text(formatCalories(view.calories, view.caloriesNoteAr));
     } else {
       $("#item-modal-cal").text("—");
+    }
+    if (size.mlgm != null) {
+      $("#item-modal-salt").html(saltBadgeHtml(size.mlgm) || "—");
+    } else if (view.mlgm != null) {
+      $("#item-modal-salt").html(saltBadgeHtml(view.mlgm) || "—");
+    } else {
+      $("#item-modal-salt").text("—");
     }
   }
 
@@ -677,6 +738,9 @@
       if (!activeContext.item.sizes) {
         $("#item-modal-cal").text(
           formatCalories(choice.calories, activeContext.item.caloriesNoteAr)
+        );
+        $("#item-modal-salt").html(
+          saltBadgeHtml(choice.mlgm != null ? choice.mlgm : activeContext.item.mlgm) || "—"
         );
         $("#item-modal-price").text(formatPrice(choice.price));
       }

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Mountain Dew">
+  <defs>
+    <linearGradient id="md" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1B5E20"/>
+      <stop offset="55%" stop-color="#69F0AE"/>
+      <stop offset="100%" stop-color="#FFEB3B"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="36" fill="#0D1B0F"/>
+  <path d="M20 150 L70 60 L100 110 L130 40 L180 150 Z" fill="url(#md)" opacity="0.95"/>
+  <text x="100" y="168" text-anchor="middle" font-family="Arial Black, Arial, sans-serif" font-size="20" font-weight="900" fill="#C6FF00">DEW</text>
+  <text x="100" y="186" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#A5D6A7">MOUNTAIN DEW</text>
+</svg>

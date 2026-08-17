@@ -7,47 +7,44 @@ window.MENU = {
   },
   categories: [
     {
-      id: "breakfast",
-      nameEn: "Breakfast",
-      nameAr: "فطور",
-      icon: "egg",
-      image: "images/items/1.png",
+      id: "boxes",
+      nameEn: "Boxes",
+      nameAr: "بوكسات",
+      icon: "box",
+      image: "images/items/27.jpg",
       items: [
-        { id: 1, nameAr: "مدور مكس جبن", nameEn: "Cheese Mix Round", price: 5, calories: 696, image: "images/items/1.png" },
-        { id: 2, nameAr: "مدور بيض", nameEn: "Egg Round", price: 4, calories: 522, image: "images/items/2.png" },
-        { id: 3, nameAr: "مدور بيض بالجبن", nameEn: "Egg & Cheese Round", price: 5, calories: 609, image: "images/items/3.png" },
-        { id: 4, nameAr: "مدور شكشوكة", nameEn: "Shakshuka Round", price: 4, calories: 522, image: "images/items/4.png" },
-        { id: 5, nameAr: "مدور شكشوكة بالجبن", nameEn: "Shakshuka & Cheese Round", price: 5, calories: 609, image: "images/items/5.png" },
-        { id: 6, nameAr: "مدور اتشكن مكس", nameEn: "Chicken Mix Round", price: 6, calories: 783, image: "images/items/6.png" },
-        { id: 7, nameAr: "بوكس صحابك 6 فطاير", nameEn: "Friends Box 6 Pies", price: 25, calories: 3478, image: "images/items/7.jpg" },
-        { id: 8, nameAr: "بوكس مدور اتشكن مكس", nameEn: "Chicken Mix Round Box", price: 40, calories: 6078, image: "images/items/8.jpg" }
-      ]
-    },
-    {
-      id: "shawarma",
-      nameEn: "Shawarma",
-      nameAr: "ساندوتش الشاورما",
-      icon: "skewer",
-      image: "images/items/9.png",
-      items: [
-        { id: 9, nameAr: "شاورما مكس", nameEn: "Shawarma Mix", price: 14, calories: 800, mlgm: 0.130, image: "images/items/9.png" },
-        { id: 10, nameAr: "شاورما ساندوتش صاج", nameEn: "Shawarma Saj", price: 6, calories: 341, mlgm: 0.125, image: "images/items/10.png" },
-        { id: 11, nameAr: "شاورما ساندوتش شامي", nameEn: "Shawarma Shami", price: 6, calories: 357, mlgm: 0.125, image: "images/items/11.png" },
-        { id: 12, nameAr: "شاورما ساندوتش تورتيلا", nameEn: "Shawarma Tortilla", price: 7, calories: 182, mlgm: 0.125, image: "images/items/12.png" },
-        { id: 13, nameAr: "شاورما صاروخ صاج", nameEn: "Sarookh Saj", price: 12, calories: 847, mlgm: 0.225, image: "images/items/13.png" },
-        { id: 14, nameAr: "شاورما صاروخ تورتلا", nameEn: "Sarookh Tortilla", price: 13, calories: 715, mlgm: 0.225, image: "images/items/14.png" }
-      ]
-    },
-    {
-      id: "sandwiches",
-      nameEn: "Sandwiches",
-      nameAr: "ساندوتشات",
-      icon: "burger",
-      image: "images/items/16.jpg",
-      items: [
-        { id: 16, nameAr: "برجر شاورما", nameEn: "Shawarma Burger", price: 14, calories: 742, mlgm: 1.082, image: "images/items/16.jpg" },
-        { id: 17, nameAr: "برجر فايري", nameEn: "Fire Burger", price: 16, calories: 1042, mlgm: 1.042, image: "images/items/17.jpg" },
-        { id: 18, nameAr: "استربس", nameEn: "Strips", price: 14, calories: 582, mlgm: 0.582, image: "images/items/18.jpg" }
+        { id: 27, nameAr: "بوكس تورتو", nameEn: "Torto Box", price: 27, calories: 1889, mlgm: 3365, image: "images/items/27.jpg" },
+        { id: 28, nameAr: "بوكس شاورما عربي", nameEn: "Arabi Shawarma Box", price: 22, calories: 2180, mlgm: 3255, image: "images/items/28.jpg" },
+        { id: 44, nameAr: "عربي سنجل", nameEn: "Arabi Single", price: 17, calories: 1090, mlgm: 1627, image: "images/items/44.jpg" },
+        { id: 29, nameAr: "بوكس قوارب شاورما", nameEn: "Shawarma Boats Box", price: 25, calories: 1240, mlgm: 0.280, image: "images/items/29.png" },
+        { id: 37, nameAr: "شاورما فرن", nameEn: "Oven Shawarma", price: 28, calories: 1375, mlgm: 2.282, image: "images/items/37.png" },
+        {
+          id: 30,
+          nameAr: "بوكس كوجيك",
+          nameEn: "Kojek Box",
+          price: 27,
+          calories: 1133,
+          image: "images/items/30.png",
+          typePreview: true,
+          choices: [
+            { id: "chicken", nameAr: "دجاج", nameEn: "Chicken", calories: 1133, mlgm: 1.254, price: 27, image: "images/items/30.png" },
+            { id: "shawarma", nameAr: "شاورما", nameEn: "Shawarma", calories: 1133, mlgm: 1.168, price: 27, image: "images/items/30.png" }
+          ]
+        },
+        {
+          id: 31,
+          nameAr: "بوكس بارتي جايز",
+          nameEn: "Party Guys Box",
+          image: "images/items/31.png",
+          calories: 333,
+          caloriesNoteAr: "للسندوتش",
+          caloriesNoteEn: "per sandwich",
+          sizes: [
+            { id: "11", nameAr: "11 حبة", nameEn: "11 pcs", price: 61, calories: 333 },
+            { id: "16", nameAr: "16 حبة", nameEn: "16 pcs", price: 79, calories: 333 },
+            { id: "22", nameAr: "22 حبة", nameEn: "22 pcs", price: 105, calories: 333 }
+          ]
+        }
       ]
     },
     {
@@ -123,44 +120,60 @@ window.MENU = {
       ]
     },
     {
-      id: "boxes",
-      nameEn: "Boxes",
-      nameAr: "بوكسات",
-      icon: "box",
-      image: "images/items/27.jpg",
+      id: "shawarma",
+      nameEn: "Shawarma",
+      nameAr: "ساندوتش الشاورما",
+      icon: "skewer",
+      image: "images/items/9.png",
       items: [
-        { id: 27, nameAr: "بوكس تورتو", nameEn: "Torto Box", price: 27, calories: 1889, mlgm: 3365, image: "images/items/27.jpg" },
-        { id: 28, nameAr: "بوكس شاورما عربي", nameEn: "Arabi Shawarma Box", price: 22, calories: 2180, mlgm: 3255, image: "images/items/28.jpg" },
-        { id: 44, nameAr: "عربي سنجل", nameEn: "Arabi Single", price: 17, calories: 1090, mlgm: 1627, image: "images/items/44.jpg" },
-        { id: 29, nameAr: "بوكس قوارب شاورما", nameEn: "Shawarma Boats Box", price: 25, calories: 1240, mlgm: 0.280, image: "images/items/29.png" },
-        { id: 37, nameAr: "شاورما فرن", nameEn: "Oven Shawarma", price: 28, calories: 1375, mlgm: 2.282, image: "images/items/37.png" },
-        {
-          id: 30,
-          nameAr: "بوكس كوجيك",
-          nameEn: "Kojek Box",
-          price: 27,
-          calories: 1133,
-          image: "images/items/30.png",
-          typePreview: true,
-          choices: [
-            { id: "chicken", nameAr: "دجاج", nameEn: "Chicken", calories: 1133, mlgm: 1.254, price: 27, image: "images/items/30.png" },
-            { id: "shawarma", nameAr: "شاورما", nameEn: "Shawarma", calories: 1133, mlgm: 1.168, price: 27, image: "images/items/30.png" }
-          ]
-        },
-        {
-          id: 31,
-          nameAr: "بوكس بارتي جايز",
-          nameEn: "Party Guys Box",
-          image: "images/items/31.png",
-          calories: 333,
-          caloriesNoteAr: "للسندوتش",
-          caloriesNoteEn: "per sandwich",
-          sizes: [
-            { id: "11", nameAr: "11 حبة", nameEn: "11 pcs", price: 61, calories: 333 },
-            { id: "16", nameAr: "16 حبة", nameEn: "16 pcs", price: 79, calories: 333 },
-            { id: "22", nameAr: "22 حبة", nameEn: "22 pcs", price: 105, calories: 333 }
-          ]
-        }
+        { id: 9, nameAr: "شاورما مكس", nameEn: "Shawarma Mix", price: 14, calories: 800, mlgm: 0.130, image: "images/items/9.png" },
+        { id: 10, nameAr: "شاورما ساندوتش صاج", nameEn: "Shawarma Saj", price: 6, calories: 341, mlgm: 0.125, image: "images/items/10.png" },
+        { id: 11, nameAr: "شاورما ساندوتش شامي", nameEn: "Shawarma Shami", price: 6, calories: 357, mlgm: 0.125, image: "images/items/11.png" },
+        { id: 12, nameAr: "شاورما ساندوتش تورتيلا", nameEn: "Shawarma Tortilla", price: 7, calories: 182, mlgm: 0.125, image: "images/items/12.png" },
+        { id: 13, nameAr: "شاورما صاروخ صاج", nameEn: "Sarookh Saj", price: 12, calories: 847, mlgm: 0.225, image: "images/items/13.png" },
+        { id: 14, nameAr: "شاورما صاروخ تورتلا", nameEn: "Sarookh Tortilla", price: 13, calories: 715, mlgm: 0.225, image: "images/items/14.png" }
+      ]
+    },
+    {
+      id: "sandwiches",
+      nameEn: "Sandwiches",
+      nameAr: "ساندوتشات",
+      icon: "burger",
+      image: "images/items/16.jpg",
+      items: [
+        { id: 16, nameAr: "برجر شاورما", nameEn: "Shawarma Burger", price: 14, calories: 742, mlgm: 1.082, image: "images/items/16.jpg" },
+        { id: 17, nameAr: "برجر فايري", nameEn: "Fire Burger", price: 16, calories: 1042, mlgm: 1.042, image: "images/items/17.jpg" },
+        { id: 18, nameAr: "استربس", nameEn: "Strips", price: 14, calories: 582, mlgm: 0.582, image: "images/items/18.jpg" }
+      ]
+    },
+    {
+      id: "breakfast",
+      nameEn: "Breakfast",
+      nameAr: "فطور",
+      icon: "egg",
+      image: "images/items/1.png",
+      items: [
+        { id: 1, nameAr: "مدور مكس جبن", nameEn: "Cheese Mix Round", price: 5, calories: 696, image: "images/items/1.png" },
+        { id: 2, nameAr: "مدور بيض", nameEn: "Egg Round", price: 4, calories: 522, image: "images/items/2.png" },
+        { id: 3, nameAr: "مدور بيض بالجبن", nameEn: "Egg & Cheese Round", price: 5, calories: 609, image: "images/items/3.png" },
+        { id: 4, nameAr: "مدور شكشوكة", nameEn: "Shakshuka Round", price: 4, calories: 522, image: "images/items/4.png" },
+        { id: 5, nameAr: "مدور شكشوكة بالجبن", nameEn: "Shakshuka & Cheese Round", price: 5, calories: 609, image: "images/items/5.png" },
+        { id: 6, nameAr: "مدور اتشكن مكس", nameEn: "Chicken Mix Round", price: 6, calories: 783, image: "images/items/6.png" },
+        { id: 7, nameAr: "بوكس صحابك 6 فطاير", nameEn: "Friends Box 6 Pies", price: 25, calories: 3478, image: "images/items/7.jpg" },
+        { id: 8, nameAr: "بوكس مدور اتشكن مكس", nameEn: "Chicken Mix Round Box", price: 40, calories: 6078, image: "images/items/8.jpg" }
+      ]
+    },
+    {
+      id: "sides",
+      nameEn: "Side Orders",
+      nameAr: "الطلبات الجانبية",
+      icon: "fries",
+      image: "images/items/34.png",
+      items: [
+        { id: 34, nameAr: "بطاطس ذهبية", nameEn: "Golden Fries", price: 8, calories: 240, mlgm: 0.100, image: "images/items/34.png" },
+        { id: 35, nameAr: "بطاطس ويدجز", nameEn: "Potato Wedges", price: 9, calories: 320, mlgm: 0.100, image: "images/items/35.png" },
+        { id: 36, nameAr: "بطاطس كيرلي", nameEn: "Curly Fries", price: 9, calories: 320, mlgm: 0.100, image: "images/items/36.png" },
+        { id: 38, nameAr: "بطاطس كيرلي", nameEn: "Curly Fries", price: 10, calories: 280, mlgm: 0.100, image: "images/items/38.png" }
       ]
     },
     {
@@ -200,19 +213,6 @@ window.MENU = {
             { id: "spicy", nameAr: "شطية", nameEn: "Spicy", price: 2, calories: 100, mlgm: 0.100, image: "images/items/33-spicy.png" }
           ]
         }
-      ]
-    },
-    {
-      id: "sides",
-      nameEn: "Side Orders",
-      nameAr: "الطلبات الجانبية",
-      icon: "fries",
-      image: "images/items/34.png",
-      items: [
-        { id: 34, nameAr: "بطاطس ذهبية", nameEn: "Golden Fries", price: 8, calories: 240, mlgm: 0.100, image: "images/items/34.png" },
-        { id: 35, nameAr: "بطاطس ويدجز", nameEn: "Potato Wedges", price: 9, calories: 320, mlgm: 0.100, image: "images/items/35.png" },
-        { id: 36, nameAr: "بطاطس كيرلي", nameEn: "Curly Fries", price: 9, calories: 320, mlgm: 0.100, image: "images/items/36.png" },
-        { id: 38, nameAr: "بطاطس كيرلي", nameEn: "Curly Fries", price: 10, calories: 280, mlgm: 0.100, image: "images/items/38.png" }
       ]
     },
     {

@@ -3,49 +3,49 @@
 
   var ICONS = {
     juice:
-      '<svg viewBox="0 0 64 64" fill="none"><rect x="18" y="14" width="28" height="40" rx="8" fill="#6D3041"/><rect x="22" y="18" width="20" height="28" rx="6" fill="#F7E0C2"/><path d="M30 8h4v10h-4z" fill="#6D3041"/><circle cx="32" cy="12" r="5" fill="#6D3041"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><rect x="18" y="14" width="28" height="40" rx="8" fill="#8B1538"/><rect x="22" y="18" width="20" height="28" rx="6" fill="#F7E0C2"/><path d="M30 8h4v10h-4z" fill="#8B1538"/><circle cx="32" cy="12" r="5" fill="#8B1538"/></svg>',
     cocktail:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M12 12h40L36 32v18h10v6H18v-6h10V32L12 12z" fill="#6D3041"/><path d="M20 16h24l-12 14L20 16z" fill="#F7E0C2"/><circle cx="44" cy="14" r="4" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M12 12h40L36 32v18h10v6H18v-6h10V32L12 12z" fill="#8B1538"/><path d="M20 16h24l-12 14L20 16z" fill="#F7E0C2"/><circle cx="44" cy="14" r="4" fill="#F7E0C2"/></svg>',
     soda:
-      '<svg viewBox="0 0 64 64" fill="none"><rect x="20" y="10" width="24" height="44" rx="8" fill="#6D3041"/><rect x="24" y="16" width="16" height="10" rx="4" fill="#F7E0C2"/><circle cx="32" cy="38" r="7" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><rect x="20" y="10" width="24" height="44" rx="8" fill="#8B1538"/><rect x="24" y="16" width="16" height="10" rx="4" fill="#F7E0C2"/><circle cx="32" cy="38" r="7" fill="#F7E0C2"/></svg>',
     water:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M24 8h16l6 12v32a8 8 0 0 1-8 8H26a8 8 0 0 1-8-8V20l6-12z" fill="#6D3041"/><path d="M26 22h12v26H26z" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M24 8h16l6 12v32a8 8 0 0 1-8 8H26a8 8 0 0 1-8-8V20l6-12z" fill="#8B1538"/><path d="M26 22h12v26H26z" fill="#F7E0C2"/></svg>',
     box:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M8 22l24-12 24 12-24 12L8 22z" fill="#6D3041"/><path d="M12 24v22l20 10V34L12 24z" fill="#6D3041"/><path d="M52 24v22L32 56V34l20-10z" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M8 22l24-12 24 12-24 12L8 22z" fill="#8B1538"/><path d="M12 24v22l20 10V34L12 24z" fill="#8B1538"/><path d="M52 24v22L32 56V34l20-10z" fill="#F7E0C2"/></svg>',
     party:
-      '<svg viewBox="0 0 64 64" fill="none"><rect x="10" y="22" width="44" height="30" rx="8" fill="#6D3041"/><path d="M16 22c0-10 32-10 32 0H16z" fill="#F7E0C2"/><circle cx="24" cy="38" r="4" fill="#F7E0C2"/><circle cx="40" cy="38" r="4" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><rect x="10" y="22" width="44" height="30" rx="8" fill="#8B1538"/><path d="M16 22c0-10 32-10 32 0H16z" fill="#F7E0C2"/><circle cx="24" cy="38" r="4" fill="#F7E0C2"/><circle cx="40" cy="38" r="4" fill="#F7E0C2"/></svg>',
     burger:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M12 28c0-12 40-12 40 0H12z" fill="#6D3041"/><rect x="12" y="30" width="40" height="8" rx="3" fill="#F7E0C2"/><path d="M12 42h40c0 10-40 10-40 0z" fill="#6D3041"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M12 28c0-12 40-12 40 0H12z" fill="#8B1538"/><rect x="12" y="30" width="40" height="8" rx="3" fill="#F7E0C2"/><path d="M12 42h40c0 10-40 10-40 0z" fill="#8B1538"/></svg>',
     wrap:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M16 12l32 8v32L16 44V12z" fill="#6D3041"/><path d="M20 16l24 6v24L20 40V16z" fill="#F7E0C2"/><path d="M20 28h24" stroke="#6D3041" stroke-width="3"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M16 12l32 8v32L16 44V12z" fill="#8B1538"/><path d="M20 16l24 6v24L20 40V16z" fill="#F7E0C2"/><path d="M20 28h24" stroke="#8B1538" stroke-width="3"/></svg>',
     strips:
-      '<svg viewBox="0 0 64 64" fill="none"><rect x="14" y="14" width="10" height="36" rx="5" fill="#6D3041"/><rect x="27" y="18" width="10" height="32" rx="5" fill="#F7E0C2" stroke="#6D3041" stroke-width="2"/><rect x="40" y="12" width="10" height="38" rx="5" fill="#6D3041"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><rect x="14" y="14" width="10" height="36" rx="5" fill="#8B1538"/><rect x="27" y="18" width="10" height="32" rx="5" fill="#F7E0C2" stroke="#8B1538" stroke-width="2"/><rect x="40" y="12" width="10" height="38" rx="5" fill="#8B1538"/></svg>',
     egg:
-      '<svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="34" rx="22" ry="18" fill="#6D3041"/><ellipse cx="32" cy="34" rx="14" ry="11" fill="#F7E0C2"/><circle cx="32" cy="34" r="6" fill="#6D3041"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="34" rx="22" ry="18" fill="#8B1538"/><ellipse cx="32" cy="34" rx="14" ry="11" fill="#F7E0C2"/><circle cx="32" cy="34" r="6" fill="#8B1538"/></svg>',
     sauce:
-      '<svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="18" rx="18" ry="8" fill="#6D3041"/><path d="M14 18h36v24a14 14 0 0 1-36 0V18z" fill="#6D3041"/><ellipse cx="32" cy="24" rx="12" ry="6" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="18" rx="18" ry="8" fill="#8B1538"/><path d="M14 18h36v24a14 14 0 0 1-36 0V18z" fill="#8B1538"/><ellipse cx="32" cy="24" rx="12" ry="6" fill="#F7E0C2"/></svg>',
     fries:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M12 28h40l-6 28H18L12 28z" fill="#6D3041"/><rect x="18" y="10" width="6" height="22" rx="3" fill="#F7E0C2"/><rect x="29" y="8" width="6" height="24" rx="3" fill="#F7E0C2"/><rect x="40" y="12" width="6" height="20" rx="3" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M12 28h40l-6 28H18L12 28z" fill="#8B1538"/><rect x="18" y="10" width="6" height="22" rx="3" fill="#F7E0C2"/><rect x="29" y="8" width="6" height="24" rx="3" fill="#F7E0C2"/><rect x="40" y="12" width="6" height="20" rx="3" fill="#F7E0C2"/></svg>',
     wedges:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M12 48L32 12l20 36H12z" fill="#6D3041"/><path d="M22 44L32 24l10 20H22z" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M12 48L32 12l20 36H12z" fill="#8B1538"/><path d="M22 44L32 24l10 20H22z" fill="#F7E0C2"/></svg>',
     curly:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M14 40c8-18 28-18 36 0" stroke="#6D3041" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M18 28c6-12 22-12 28 0" stroke="#F7E0C2" stroke-width="6" fill="none" stroke-linecap="round"/><rect x="16" y="42" width="32" height="10" rx="5" fill="#6D3041"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M14 40c8-18 28-18 36 0" stroke="#8B1538" stroke-width="8" fill="none" stroke-linecap="round"/><path d="M18 28c6-12 22-12 28 0" stroke="#F7E0C2" stroke-width="6" fill="none" stroke-linecap="round"/><rect x="16" y="42" width="32" height="10" rx="5" fill="#8B1538"/></svg>',
     oven:
-      '<svg viewBox="0 0 64 64" fill="none"><rect x="8" y="14" width="48" height="38" rx="8" fill="#6D3041"/><rect x="14" y="22" width="36" height="22" rx="6" fill="#F7E0C2"/><circle cx="24" cy="33" r="4" fill="#6D3041"/><circle cx="40" cy="33" r="4" fill="#6D3041"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><rect x="8" y="14" width="48" height="38" rx="8" fill="#8B1538"/><rect x="14" y="22" width="36" height="22" rx="6" fill="#F7E0C2"/><circle cx="24" cy="33" r="4" fill="#8B1538"/><circle cx="40" cy="33" r="4" fill="#8B1538"/></svg>',
     combo:
-      '<svg viewBox="0 0 64 64" fill="none"><rect x="8" y="16" width="22" height="36" rx="7" fill="#6D3041"/><path d="M36 22h20l-4 28H40L36 22z" fill="#6D3041"/><rect x="12" y="20" width="14" height="8" rx="3" fill="#F7E0C2"/><rect x="42" y="10" width="5" height="16" rx="2" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><rect x="8" y="16" width="22" height="36" rx="7" fill="#8B1538"/><path d="M36 22h20l-4 28H40L36 22z" fill="#8B1538"/><rect x="12" y="20" width="14" height="8" rx="3" fill="#F7E0C2"/><rect x="42" y="10" width="5" height="16" rx="2" fill="#F7E0C2"/></svg>',
     pie:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M8 28h48l-6 24H14L8 28z" fill="#6D3041"/><ellipse cx="32" cy="28" rx="24" ry="10" fill="#F7E0C2" stroke="#6D3041" stroke-width="3"/><path d="M32 18v34" stroke="#6D3041" stroke-width="3"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M8 28h48l-6 24H14L8 28z" fill="#8B1538"/><ellipse cx="32" cy="28" rx="24" ry="10" fill="#F7E0C2" stroke="#8B1538" stroke-width="3"/><path d="M32 18v34" stroke="#8B1538" stroke-width="3"/></svg>',
     pizza:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M32 8L56 52H8L32 8z" fill="#6D3041"/><path d="M32 18L48 48H16L32 18z" fill="#F7E0C2"/><circle cx="32" cy="34" r="4" fill="#6D3041"/><circle cx="26" cy="42" r="3" fill="#6D3041"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M32 8L56 52H8L32 8z" fill="#8B1538"/><path d="M32 18L48 48H16L32 18z" fill="#F7E0C2"/><circle cx="32" cy="34" r="4" fill="#8B1538"/><circle cx="26" cy="42" r="3" fill="#8B1538"/></svg>',
     calzone:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M10 44c0-18 44-30 44-8 0 14-18 22-44 8z" fill="#6D3041"/><path d="M16 42c4-12 32-20 34-6-8 8-22 10-34 6z" fill="#F7E0C2"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M10 44c0-18 44-30 44-8 0 14-18 22-44 8z" fill="#8B1538"/><path d="M16 42c4-12 32-20 34-6-8 8-22 10-34 6z" fill="#F7E0C2"/></svg>',
     skewer:
-      '<svg viewBox="0 0 64 64" fill="none"><rect x="30" y="4" width="4" height="56" rx="2" fill="#6D3041"/><ellipse cx="32" cy="18" rx="16" ry="8" fill="#6D3041"/><ellipse cx="32" cy="30" rx="18" ry="8" fill="#F7E0C2" stroke="#6D3041" stroke-width="2"/><ellipse cx="32" cy="42" rx="14" ry="7" fill="#6D3041"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><rect x="30" y="4" width="4" height="56" rx="2" fill="#8B1538"/><ellipse cx="32" cy="18" rx="16" ry="8" fill="#8B1538"/><ellipse cx="32" cy="30" rx="18" ry="8" fill="#F7E0C2" stroke="#8B1538" stroke-width="2"/><ellipse cx="32" cy="42" rx="14" ry="7" fill="#8B1538"/></svg>',
     saj:
-      '<svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="32" rx="24" ry="20" fill="#6D3041"/><ellipse cx="32" cy="32" rx="16" ry="12" fill="#F7E0C2"/><path d="M18 32h28" stroke="#6D3041" stroke-width="3"/></svg>',
+      '<svg viewBox="0 0 64 64" fill="none"><ellipse cx="32" cy="32" rx="24" ry="20" fill="#8B1538"/><ellipse cx="32" cy="32" rx="16" ry="12" fill="#F7E0C2"/><path d="M18 32h28" stroke="#8B1538" stroke-width="3"/></svg>',
     rocket:
-      '<svg viewBox="0 0 64 64" fill="none"><path d="M18 50L46 10l6 8-16 36-18-4z" fill="#6D3041"/><path d="M24 44L46 14l2 4-16 32-8-6z" fill="#F7E0C2"/><path d="M18 50l-8 4 8-12" fill="#6D3041"/></svg>'
+      '<svg viewBox="0 0 64 64" fill="none"><path d="M18 50L46 10l6 8-16 36-18-4z" fill="#8B1538"/><path d="M24 44L46 14l2 4-16 32-8-6z" fill="#F7E0C2"/><path d="M18 50l-8 4 8-12" fill="#8B1538"/></svg>'
   };
 
   var $homeView = $("#home-view");
@@ -71,7 +71,7 @@
     if (!src) {
       return (
         '<div class="no-image ' + (extraClass || "") + '">' +
-        '<svg viewBox="0 0 64 64" fill="none"><rect x="8" y="14" width="48" height="36" rx="8" stroke="#6D3041" stroke-width="3"/><circle cx="24" cy="28" r="5" fill="#6D3041"/><path d="M12 44l14-12 10 8 8-6 8 10H12z" fill="#F7E0C2" stroke="#6D3041" stroke-width="2"/></svg>' +
+        '<svg viewBox="0 0 64 64" fill="none"><rect x="8" y="14" width="48" height="36" rx="8" stroke="#8B1538" stroke-width="3"/><circle cx="24" cy="28" r="5" fill="#8B1538"/><path d="M12 44l14-12 10 8 8-6 8 10H12z" fill="#F7E0C2" stroke="#8B1538" stroke-width="2"/></svg>' +
         "<span>لا تتوفر صورة</span></div>"
       );
     }

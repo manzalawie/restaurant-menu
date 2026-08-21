@@ -14,7 +14,7 @@ window.MENU = {
       image: "images/items/27.jpg",
       items: [
         { id: 27, nameAr: "بوكس تورتو", nameEn: "Torto Box", price: 27, calories: 1889, mlgm: 3365, image: "images/items/27.jpg" },
-        { id: 28, nameAr: "بوكس شاورما عربي", nameEn: "Arabi Shawarma Box", price: 22, calories: 2180, mlgm: 3255, image: "images/items/28.jpg" },
+        { id: 28, nameAr: "بوكس شاورما عربي", nameEn: "Arabi Shawarma Box", price: 22, calories: 2180, mlgm: 3255, image: "images/items/28.png" },
         { id: 44, nameAr: "عربي سنجل", nameEn: "Arabi Single", price: 17, calories: 1090, mlgm: 1627, image: "images/items/44.jpg" },
         { id: 29, nameAr: "بوكس قوارب شاورما", nameEn: "Shawarma Boats Box", price: 25, calories: 1240, mlgm: 0.280, image: "images/items/29.png" },
         { id: 37, nameAr: "شاورما فرن", nameEn: "Oven Shawarma", price: 28, calories: 1375, mlgm: 2.282, image: "images/items/37.png" },

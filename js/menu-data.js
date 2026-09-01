@@ -15,9 +15,7 @@ window.MENU = {
       items: [
         { id: 27, nameAr: "بوكس تورتو", nameEn: "Torto Box", price: 27, calories: 1889, mlgm: 3365, image: "images/items/27.jpg" },
         { id: 28, nameAr: "بوكس شاورما عربي", nameEn: "Arabi Shawarma Box", price: 22, calories: 2180, mlgm: 3255, image: "images/items/28.png" },
-        { id: 44, nameAr: "عربي سنجل", nameEn: "Arabi Single", price: 17, calories: 1090, mlgm: 1627, image: "images/items/44.jpg" },
         { id: 29, nameAr: "بوكس قوارب شاورما", nameEn: "Shawarma Boats Box", price: 25, calories: 1240, mlgm: 0.280, image: "images/items/29.png" },
-        { id: 37, nameAr: "شاورما فرن", nameEn: "Oven Shawarma", price: 28, calories: 1375, mlgm: 2.282, image: "images/items/37.png" },
         {
           id: 30,
           nameAr: "بوكس كوجيك",
@@ -27,10 +25,22 @@ window.MENU = {
           image: "images/items/30.png",
           typePreview: true,
           choices: [
-            { id: "chicken", nameAr: "دجاج", nameEn: "Chicken", calories: 1133, mlgm: 1.254, price: 27, image: "images/items/30.png" },
+            { id: "chicken", nameAr: "دجاج", nameEn: "Chicken", calories: 1133, mlgm: 1.254, price: 25, image: "images/items/30.png" },
             { id: "shawarma", nameAr: "شاورما", nameEn: "Shawarma", calories: 1133, mlgm: 1.168, price: 27, image: "images/items/30.png" }
           ]
         },
+        { id: 37,
+          nameAr: "شاورما فرن", 
+          nameEn: "Oven Shawarma", 
+          price: 28, 
+          calories: 1375, 
+          mlgm: 2.282, 
+          image: "images/items/37.png", 
+          sizes: [
+            { id: "11", nameAr: "دجاج فرن", nameEn: "Oven-baked chicken", price: 25},
+            { id: "16", nameAr: "شاورما فرن", nameEn: "Oven-baked shawarma", price: 28},
+          ]},
+        { id: 44, nameAr: "عربي سنجل", nameEn: "Arabi Single", price: 15, calories: 1090, mlgm: 1627, image: "images/items/44.jpg" },
         {
           id: 31,
           nameAr: "بوكس بارتي جايز",
@@ -45,6 +55,32 @@ window.MENU = {
             { id: "22", nameAr: "22 حبة", nameEn: "22 pcs", price: 105, calories: 333 }
           ]
         }
+      ]
+    },
+        {
+      id: "shawarma",
+      nameEn: "Shawarma",
+      nameAr: "ساندوتش الشاورما",
+      icon: "skewer",
+      image: "images/items/9.png",
+      items: [
+        { id: 11, nameAr: "شاورما ساندوتش شامي", nameEn: "Shawarma Shami", price: 6, calories: 357, mlgm: 0.125, image: "images/items/11.png" },
+        { id: 12, nameAr: "شاورما ساندوتش تورتيلا", nameEn: "Shawarma Tortilla", price: 7, calories: 182, mlgm: 0.125, image: "images/items/12.png" },
+        { id: 13, nameAr: "شاورما صاروخ صاج", nameEn: "Sarookh Saj", price: 12, calories: 847, mlgm: 0.225, image: "images/items/13.png" },
+        { id: 14, nameAr: "شاورما صاروخ تورتلا", nameEn: "Sarookh Tortilla", price: 13, calories: 715, mlgm: 0.225, image: "images/items/14.png" },
+        { id: 9, 
+          nameAr: "شاورما مكس", 
+          nameEn: "Shawarma Mix", 
+          price: 14, 
+          calories: 800, 
+          mlgm: 0.130, 
+          image: "images/items/9.png",
+          sizes: [
+            { id: "shawarma", nameAr: "شاورما", nameEn: "Shawarma", price: 14, calories: 800, mlgm: 0.130 },
+            { id: "chicken", nameAr: "دجاج", nameEn: "Chicken", price: 15, calories: 800, mlgm: 0.130 }
+          ] 
+        },
+        // { id: 10, nameAr: "شاورما ساندوتش صاج", nameEn: "Shawarma Saj", price: 6, calories: 341, mlgm: 0.125, image: "images/items/10.png" },
       ]
     },
     {
@@ -113,25 +149,10 @@ window.MENU = {
           image: "images/items/26.jpg",
           typePreview: true,
           choices: [
-            { id: "chicken", nameAr: "دجاج", nameEn: "Chicken", calories: 564, mlgm: 4.182, price: 78, image: "images/items/26.jpg" },
+            { id: "chicken", nameAr: "دجاج", nameEn: "Chicken", calories: 564, mlgm: 4.182, price: 73, image: "images/items/26.jpg" },
             { id: "shawarma", nameAr: "شاورما", nameEn: "Shawarma", calories: 564, mlgm: 4.276, price: 78, image: "images/items/26.jpg" }
           ]
         }
-      ]
-    },
-    {
-      id: "shawarma",
-      nameEn: "Shawarma",
-      nameAr: "ساندوتش الشاورما",
-      icon: "skewer",
-      image: "images/items/9.png",
-      items: [
-        { id: 9, nameAr: "شاورما مكس", nameEn: "Shawarma Mix", price: 14, calories: 800, mlgm: 0.130, image: "images/items/9.png" },
-        { id: 10, nameAr: "شاورما ساندوتش صاج", nameEn: "Shawarma Saj", price: 6, calories: 341, mlgm: 0.125, image: "images/items/10.png" },
-        { id: 11, nameAr: "شاورما ساندوتش شامي", nameEn: "Shawarma Shami", price: 6, calories: 357, mlgm: 0.125, image: "images/items/11.png" },
-        { id: 12, nameAr: "شاورما ساندوتش تورتيلا", nameEn: "Shawarma Tortilla", price: 7, calories: 182, mlgm: 0.125, image: "images/items/12.png" },
-        { id: 13, nameAr: "شاورما صاروخ صاج", nameEn: "Sarookh Saj", price: 12, calories: 847, mlgm: 0.225, image: "images/items/13.png" },
-        { id: 14, nameAr: "شاورما صاروخ تورتلا", nameEn: "Sarookh Tortilla", price: 13, calories: 715, mlgm: 0.225, image: "images/items/14.png" }
       ]
     },
     {
@@ -148,19 +169,125 @@ window.MENU = {
     },
     {
       id: "breakfast",
-      nameEn: "Breakfast",
-      nameAr: "فطور",
+      nameEn: "Cup Pie",
+      nameAr: "كاب باي",
       icon: "egg",
-      image: "images/items/1.png",
+      image: "images/items/45.png",
       items: [
-        { id: 1, nameAr: "مدور مكس جبن", nameEn: "Cheese Mix Round", price: 5, calories: 696, image: "images/items/1.png" },
-        { id: 2, nameAr: "مدور بيض", nameEn: "Egg Round", price: 4, calories: 522, image: "images/items/2.png" },
-        { id: 3, nameAr: "مدور بيض بالجبن", nameEn: "Egg & Cheese Round", price: 5, calories: 609, image: "images/items/3.png" },
-        { id: 4, nameAr: "مدور شكشوكة", nameEn: "Shakshuka Round", price: 4, calories: 522, image: "images/items/4.png" },
-        { id: 5, nameAr: "مدور شكشوكة بالجبن", nameEn: "Shakshuka & Cheese Round", price: 5, calories: 609, image: "images/items/5.png" },
-        { id: 6, nameAr: "مدور اتشكن مكس", nameEn: "Chicken Mix Round", price: 6, calories: 783, image: "images/items/6.png" },
-        { id: 7, nameAr: "بوكس صحابك 6 فطاير", nameEn: "Friends Box 6 Pies", price: 25, calories: 3478, image: "images/items/7.jpg" },
-        { id: 8, nameAr: "بوكس مدور اتشكن مكس", nameEn: "Chicken Mix Round Box", price: 40, calories: 6078, image: "images/items/8.jpg" }
+        { id: 45, 
+          nameAr: "3 حبة", 
+          nameEn: "3 pcs", 
+          price: 18,
+          calories: 430, 
+          image: "images/items/45.png",
+          sizes: [
+            { id: "small", nameAr: "دجاج", nameEn: "Chicken", price: 18, calories: 430 , mlgm: 0.915},
+            { id: "large", nameAr: "شاورما", nameEn: "Shawarma", price: 18, calories: 500 , mlgm: 1.15}
+          ] 
+        },
+        { id: 46, 
+          nameAr: "12 حبة", 
+          nameEn: "12 pcs", 
+          price: 59,
+          calories: 430, 
+          image: "images/items/46.png",
+          sizes: [
+            { id: "small", nameAr: "دجاج", nameEn: "Chicken", price: 59, calories: 138 , mlgm: 2.282},
+            { id: "large", nameAr: "شاورما", nameEn: "Shawarma", price: 59, calories: 166 , mlgm: 4.6}
+          ] 
+        },
+      ]
+    },
+    // {
+    //   id: "breakfast",
+    //   nameEn: "Breakfast",
+    //   nameAr: "فطور",
+    //   icon: "egg",
+    //   image: "images/items/1.png",
+    //   items: [
+    //     { id: 1, nameAr: "مدور مكس جبن", nameEn: "Cheese Mix Round", price: 5, calories: 696, image: "images/items/1.png" },
+    //     { id: 2, nameAr: "مدور بيض", nameEn: "Egg Round", price: 4, calories: 522, image: "images/items/2.png" },
+    //     { id: 3, nameAr: "مدور بيض بالجبن", nameEn: "Egg & Cheese Round", price: 5, calories: 609, image: "images/items/3.png" },
+    //     { id: 4, nameAr: "مدور شكشوكة", nameEn: "Shakshuka Round", price: 4, calories: 522, image: "images/items/4.png" },
+    //     { id: 5, nameAr: "مدور شكشوكة بالجبن", nameEn: "Shakshuka & Cheese Round", price: 5, calories: 609, image: "images/items/5.png" },
+    //     { id: 6, nameAr: "مدور اتشكن مكس", nameEn: "Chicken Mix Round", price: 6, calories: 783, image: "images/items/6.png" },
+    //     { id: 7, nameAr: "بوكس صحابك 6 فطاير", nameEn: "Friends Box 6 Pies", price: 25, calories: 3478, image: "images/items/7.jpg" },
+    //     { id: 8, nameAr: "بوكس مدور اتشكن مكس", nameEn: "Chicken Mix Round Box", price: 40, calories: 6078, image: "images/items/8.jpg" }
+    //   ]
+    // },
+        {
+      id: "juices",
+      nameEn: "Juices & Cocktail",
+      nameAr: "مشروبات و عصائر",
+      icon: "juice",
+      image: "images/items/39.png",
+      items: [
+        {
+          id: 39,
+          nameAr: "برتقال",
+          nameEn: "Orange Juice",
+          image: "images/items/39.png",
+          mlgm: 150,
+          sizes: [
+            { id: "small", nameAr: "صغير", nameEn: "Small", price: 9 },
+            { id: "large", nameAr: "كبير", nameEn: "Large", price: 12 },
+            { id: "liter", nameAr: "لتر", nameEn: "1 Liter", price: 22 },
+            { id: "liter15", nameAr: "لتر و نص", nameEn: "1.5 Liter", price: 28 }
+          ]
+        },
+        {
+          id: 40,
+          nameAr: "كوكتيل",
+          nameEn: "Cocktail",
+          image: null,
+          mlgm: 150,
+          sizes: [
+            { id: "small", nameAr: "صغير", nameEn: "Small", price: 9 },
+            { id: "large", nameAr: "كبير", nameEn: "Large", price: 12 },
+            { id: "liter", nameAr: "لتر", nameEn: "1 Liter", price: 22 },
+            { id: "liter15", nameAr: "لتر و نص", nameEn: "1.5 Liter", price: 28 }
+          ]
+        },
+        {
+          id: 41,
+          nameAr: "عورا القلب",
+          nameEn: "Awra Al-Qalb",
+          image: "images/items/41.png",
+          mlgm: 150,
+          sizes: [
+            { id: "small", nameAr: "صغير", nameEn: "Small", price: 10 },
+            { id: "large", nameAr: "كبير", nameEn: "Large", price: 13 },
+            { id: "liter", nameAr: "لتر", nameEn: "1 Liter", price: 28 },
+            { id: "liter15", nameAr: "لتر و نص", nameEn: "1.5 Liter", price: 33 }
+          ]
+        },
+        {
+          id: 44,
+          nameAr: "الربيع",
+          nameEn: "Awra Al-Qalb",
+          image: "images/items/44.png",
+          price: 2,
+          calories: 48,
+        },
+        {
+          id: 42,
+          nameAr: "مشروبات غازية",
+          nameEn: "Soft Drinks",
+          price: 3,
+          image: "images/items/soda/pepsi-diet.webp",
+          choiceMode: true,
+          typePreview: true,
+          logoGrid: true,
+          choices: [
+            { id: "mirinda-orange", nameAr: "ميرندا برتقال", nameEn: "Mirinda Orange", price: 3, image: "images/items/soda/mirinda-orange.jpg" },
+            { id: "mirinda-lemon", nameAr: "ميرندا ليمون", nameEn: "Mirinda Lemon", price: 3, image: "images/items/soda/mirinda-lemon.png" },
+            { id: "pepsi-diet", nameAr: "بيبسي دايت", nameEn: "Pepsi Diet", price: 3, image: "images/items/soda/pepsi-diet.webp" },
+            { id: "sevenup-diet", nameAr: "7 اب دايت", nameEn: "7UP Diet", price: 3, image: "images/items/soda/sevenup-diet.png" },
+            { id: "sevenup", nameAr: "7 اب عادي", nameEn: "7UP", price: 3, image: "images/items/soda/sevenup.png" },
+            { id: "mountain-dew", nameAr: "ماونتن ديو", nameEn: "Mountain Dew", price: 3, image: "images/items/soda/mountain-dew.png" }
+          ]
+        },
+        { id: 43, nameAr: "مياه", nameEn: "Water", price: 1, image: "images/items/43.png" }
       ]
     },
     {
@@ -215,72 +342,6 @@ window.MENU = {
         }
       ]
     },
-    {
-      id: "juices",
-      nameEn: "Juices & Cocktail",
-      nameAr: "مشروبات و عصائر",
-      icon: "juice",
-      image: "images/items/39.png",
-      items: [
-        {
-          id: 39,
-          nameAr: "برتقال",
-          nameEn: "Orange Juice",
-          image: "images/items/39.png",
-          mlgm: 150,
-          sizes: [
-            { id: "small", nameAr: "صغير", nameEn: "Small", price: 9 },
-            { id: "large", nameAr: "كبير", nameEn: "Large", price: 12 },
-            { id: "liter", nameAr: "لتر", nameEn: "1 Liter", price: 22 },
-            { id: "liter15", nameAr: "لتر و نص", nameEn: "1.5 Liter", price: 28 }
-          ]
-        },
-        {
-          id: 40,
-          nameAr: "كوكتيل",
-          nameEn: "Cocktail",
-          image: null,
-          mlgm: 150,
-          sizes: [
-            { id: "small", nameAr: "صغير", nameEn: "Small", price: 9 },
-            { id: "large", nameAr: "كبير", nameEn: "Large", price: 12 },
-            { id: "liter", nameAr: "لتر", nameEn: "1 Liter", price: 22 },
-            { id: "liter15", nameAr: "لتر و نص", nameEn: "1.5 Liter", price: 28 }
-          ]
-        },
-        {
-          id: 41,
-          nameAr: "عورا القلب",
-          nameEn: "Awra Al-Qalb",
-          image: "images/items/41.png",
-          mlgm: 150,
-          sizes: [
-            { id: "small", nameAr: "صغير", nameEn: "Small", price: 10 },
-            { id: "large", nameAr: "كبير", nameEn: "Large", price: 13 },
-            { id: "liter", nameAr: "لتر", nameEn: "1 Liter", price: 28 },
-            { id: "liter15", nameAr: "لتر و نص", nameEn: "1.5 Liter", price: 33 }
-          ]
-        },
-        {
-          id: 42,
-          nameAr: "مشروبات غازية",
-          nameEn: "Soft Drinks",
-          price: 3,
-          image: "images/items/soda/pepsi-diet.webp",
-          choiceMode: true,
-          typePreview: true,
-          logoGrid: true,
-          choices: [
-            { id: "mirinda-orange", nameAr: "ميرندا برتقال", nameEn: "Mirinda Orange", price: 3, image: "images/items/soda/mirinda-orange.jpg" },
-            { id: "mirinda-lemon", nameAr: "ميرندا ليمون", nameEn: "Mirinda Lemon", price: 3, image: "images/items/soda/mirinda-lemon.png" },
-            { id: "pepsi-diet", nameAr: "بيبسي دايت", nameEn: "Pepsi Diet", price: 3, image: "images/items/soda/pepsi-diet.webp" },
-            { id: "sevenup-diet", nameAr: "7 اب دايت", nameEn: "7UP Diet", price: 3, image: "images/items/soda/sevenup-diet.png" },
-            { id: "sevenup", nameAr: "7 اب عادي", nameEn: "7UP", price: 3, image: "images/items/soda/sevenup.png" },
-            { id: "mountain-dew", nameAr: "ماونتن ديو", nameEn: "Mountain Dew", price: 3, image: "images/items/soda/mountain-dew.png" }
-          ]
-        },
-        { id: 43, nameAr: "مياه", nameEn: "Water", price: 1, image: "images/items/43.png" }
-      ]
-    }
+
   ]
 };
